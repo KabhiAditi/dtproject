@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardioSmart Test</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #003366;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 1rem;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        #myLandbot {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CardioSmart Test</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="test.html">Test</a>
+            <a href="latest.html">Latest</a>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
+    <main>
+        <section id="test">
+            <h2>Test</h2>
+            <div 
+            id="myLandbot"></div>
+            <script src="https://cdn.landbot.io/landbot-3/landbot-3.0.0.js"></script>
+            <script>
+                var myLandbot = new Landbot.Container({
+                    container: '#myLandbot',
+                    configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2188885-I7CAC3JL6KCCM93C/index.json',
+                });
+            </script>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 American College of Cardiology</p>
+    </footer>
+</body>
+</html>
